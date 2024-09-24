@@ -1,0 +1,15 @@
+title: Muntasir Hossain # your name (or website title) here
+logo: "/images/MMH_3715~2.jpg?raw=true" # your photo (or logo) here
+description: > # your text below (remove <br> elements if you don't need line breaks)
+  I am an artificial intelligence (AI) specialist and a data scientist, adept in the realms of machine learning and deep learning, big data analysis, generative AI, large language models (LLMs), natural language processing (NLP), 
+  and machine learning operations (MLOps). I have a proven track record of delivering impactful results in diverse areas such as technology, cybersecurity and energy. I have practical experience in developing end-to-end machine learning 
+  workflow including data preprocessing, model training at scale and model evaluation, deploying in production and model monitoring with data pipeline automation.   
+  
+  <br><br>
+  <a href="https://www.linkedin.com/in/-muntasir-hossain/">View my LinkedIn profile</a> 
+  
+
+remote_theme: pages-themes/minimal@v0.2.0
+# plugins:
+# - jekyll-remote-theme
+
