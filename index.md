@@ -27,7 +27,7 @@ To get a hands-on introduction to RAG, [view my codes on GitHub](https://github.
 ### Generative AI: Parameter-efficient fine-tuning of LLMs (Llama-3) with Quantized Low-Rank Adaptation (QLoRA)
 Fine-tuning an LLM (e.g. full fine-tuning) for a particular task can be computationally intensive as it involves updating all the LLM model parameters. Parameter-efficient fine-tuning (PEFT) updates only a small subset of parameters, allowing LLM fine-tuning with limited resources. Here, I have fine-tuned the [Llama-3-8B](meta-llama/Meta-Llama-3-8B) foundation model with QLoRA, a form of PEFT, by using NVIDIA L4 GPUs. In QLoRA, the pre-trained model weights are first quantized with 4-bit NormalFloat (NF4). The original model weights are frozen while trainable low-rank decomposition weight matrices are introduced and modified during the fine-tuning process, allowing for memory-efficient fine-tuning of the LLM without the need to retrain the entire model from scratch.  
 
-[Check the model on Hugging Face hub!](https://huggingface.co/MuntasirHossain/Meta-Llama-3-8B-OpenOrca)
+[Check the model on Hugging Face hub](https://huggingface.co/MuntasirHossain/Meta-Llama-3-8B-OpenOrca)
 
 Try the following conversational AI agent that uses the fine-tuned Llama 3 8B model in the backend! **Please note: the app is running on a basic CPU! A low-precision version of the fine-tuned LLM is deployed to overcome the hardware restrictions. Hence, performances may not be up to the model's full potential and responses may be slow!**
 
