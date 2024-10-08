@@ -8,7 +8,7 @@ RAG is a technique that combines a retriever and a generative LLM to deliver acc
 
 ![image](https://github.com/muntasirhsn/muntasirhsn.github.io/assets/29087240/cb5f2892-68a5-4d68-b9b4-568959b2595a) Figure: A schematic representation of RAG with a retriever and an LLM
 
-[View codes on GitHub](https://github.com/muntasirhsn/Retrieval-Augmented-Generation-with-Llama-2)
+To get a hands-on introduction to RAG, [view my codes on GitHub](https://github.com/muntasirhsn/Retrieval-Augmented-Generation-with-Llama-2)
 
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) 
 
