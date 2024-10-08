@@ -60,16 +60,23 @@ Develop an end-to-end machine learning (ML) workflow with automation for all the
 ---
 
 
-### LLMs/Generative AI: Deploying LLMs at scale with Amazon Sagemaker, FastAPI and AWS Lambda serverless services
-FastAPI is a modern web framework designed to build APIs with Python.  It emphasizes simplicity and ease of use while providing robust functionality, making it popular among developers for creating high-performance APIs. 
-In this example, I deployed a  Microsoft/Phi-2 LLM from the Hugging Face hub to an Amazon Sagemaker endpoint with GPU instances. To integrate the Sagemaker endpoint to consumer-facing APIs, I utilise FastAPI and AWS lambda as a serverless service.  
+### Deploying ML Models via Flask and Docker Containerisation
 
-![image](https://github.com/muntasirhsn/muntasirhsn.github.io/assets/29087240/92bae7ad-6a12-4ff7-a026-2a17afcf7090) Figure: Deploying Amazon Sagemaker ML model endpoint with FastAPI and AWS Lambda
+Training a machine learning model is just the first step; deploying it for real-world use is equally important. To make a trained model accessible, I deployed it as an API using Flask and containerized the entire application using Docker. This process ensures cross-environment compatibility, allowing the model to be reliably consumed in various production setups. A demo of the deployed model is available below. Disclaimer: A publicly available [heart disease data](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset/data) was utilised for training the model.  
 
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![AWS](https://img.shields.io/badge/AWS-Cloud-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/)  [![Amazon Sagemaker](https://img.shields.io/badge/Sagemaker-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/sagemaker/) [![Fast API](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](#)
+[![](https://img.shields.io/badge/Docker-white?logo=Docker)](#) [![](https://img.shields.io/badge/Flask-white?logo=Flask)](#) [![](https://img.shields.io/badge/Python-white?logo=Python)](#)
+
+#### Try the Docker app in real-time below!
+<iframe
+	src="https://mmhossain-ml-heart-disease.hf.space"
+	frameborder="0"
+	width="450"
+	height="900"
+></iframe>
 
 
 ---
+
 
 ### Computer Vision: Deploying YOLOv8 model at scale with Amazon Sagemaker Endpoints
 YOLO (you only look once) is a state-of-the-art, real-time object detection and image segmentation model used in computer vision. The latest model YOLOv8 is  known for its runtime efficiency as well as detection accuracy. To fully utilise its potential, deploying the model at scale is crucial. Here, a YOLOv8 model was hosted on the Amazon SageMaker endpoint and inference was run for input images/videos for object detection.
@@ -79,6 +86,18 @@ YOLO (you only look once) is a state-of-the-art, real-time object detection and 
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![YOLO](https://img.shields.io/badge/YOLO-Object%20Detection-white)](https://github.com/AlexeyAB/darknet) [![AWS](https://img.shields.io/badge/AWS-Cloud-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/) [![Amazon Sagemaker](https://img.shields.io/badge/Sagemaker-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/sagemaker/) 
 
 [View project on GitHub](https://github.com/muntasirhsn/Deploying-YOLOv8-model-on-Amazon-SageMaker-endpoint)
+
+
+---
+
+
+### LLMs/Generative AI: Deploying LLMs at scale with Amazon Sagemaker, FastAPI and AWS Lambda serverless services
+FastAPI is a modern web framework designed to build APIs with Python.  It emphasizes simplicity and ease of use while providing robust functionality, making it popular among developers for creating high-performance APIs. 
+In this example, I deployed a  Microsoft/Phi-2 LLM from the Hugging Face hub to an Amazon Sagemaker endpoint with GPU instances. To integrate the Sagemaker endpoint to consumer-facing APIs, I utilise FastAPI and AWS lambda as a serverless service.  
+
+![image](https://github.com/muntasirhsn/muntasirhsn.github.io/assets/29087240/92bae7ad-6a12-4ff7-a026-2a17afcf7090) Figure: Deploying Amazon Sagemaker ML model endpoint with FastAPI and AWS Lambda
+
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![AWS](https://img.shields.io/badge/AWS-Cloud-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/)  [![Amazon Sagemaker](https://img.shields.io/badge/Sagemaker-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/sagemaker/) [![Fast API](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](#)
 
 
 ---
