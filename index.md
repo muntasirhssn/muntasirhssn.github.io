@@ -2,38 +2,49 @@
 
 ---
 
-## 🌍 Interactive CO₂ Emissions Map
+### Analysing the global CO₂ emission: How did countries, regions and economic zones evolve over time?
 
-Here is an interactive visualization of global CO₂ emissions by country and year. Use the buttons to explore historical data.
+The World Bank provides carbon dioxide (CO₂) emissions, specifically total CO₂ emissions excluding Land Use, Land-Use Change, and Forestry (LULUCF), measured in million metric tons of CO₂ equivalent (Mt CO₂e). It provides key insights into environmental impact at both national, regional and economic levels over the past six decades. 
+* Many countries and regions show a clear upward trend in carbon dioxide emissions from 1960 to 2024. For instance, emission from China increased from 909 Mt CO₂e in 1970 to over 13K Mt CO₂e in recent years, reflecting rapid industrialization and population growth.
+* There is significant variation between countries. Highly industrialized or resource-rich nations (e.g., Saudi Arabia, United Arab Emirates) emit far more CO₂ than smaller or less industrialized countries (e.g., Aruba, Burundi).
+* The data suggests a strong link between economic development and emissions growth. Countries experiencing rapid economic expansion (e.g., Vietnam, United Arab Emirates) show marked increases in emissions, while some developed countries (e.g., Germany, Austria, Belgium) have stabilized or slightly reduced their emissions in recent years, likely due to policy interventions or shifts to cleaner energy.
+* While ‘High Income’ regions dominated the CO2 emissions pre-2020, the ‘Middle Income’ and ‘Upper Middle Income’ regions rapidly increased CO2 emissions after 2000, exceeding the emissions from ‘High Income’ regions. 
 
-<iframe src="images/co2_emissions_animation.html"
+##### Global CO₂ emissions
+<iframe src="images/co2_emissions_world_animation.html"
         width="1050"
         height="750"
         frameborder="0"
         scrolling="no">
 </iframe>
+Figure: Interactive visualization of global CO₂ emissions by country and year
 
-## 🌍 Interactive CO₂ Emissions Map
-
-Here is an interactive visualization of CO₂ emissions by income regions. Use the buttons to explore historical data.
-
-<iframe src="images/co2_emissions_income_zone.html"
-        width="1050"
-        height="750"
-        frameborder="0"
-        scrolling="no">
-</iframe>
-
-## 🌍 Interactive CO₂ Emissions Map
-
-Here is an interactive visualization of time-series CO₂ emissions for selected countries from the year 1970 to 2030. 
-
+##### Time sereis CO₂ emissions
 <iframe src="images/co2_emissions_timeseries.html"
         width="1050"
         height="750"
         frameborder="0"
         scrolling="no">
 </iframe>
+Figure: Time sereis CO₂ emissions for selected countries
+
+##### CO₂ emissions by income regions
+<iframe src="images/co2_emissions_bar_income_zone_cleaned.html"
+        width="1050"
+        height="750"
+        frameborder="0"
+        scrolling="no">
+</iframe>
+Figure: Interactive visualization of CO₂ emissions for different income zones from 1970 to 2023
+
+##### CO₂ emissions by geographic regions
+<iframe src="images/co2_emissions_bar_geo_cleaned.html"
+        width="1050"
+        height="750"
+        frameborder="0"
+        scrolling="no">
+</iframe>
+Figure: Interactive visualization of CO₂ emissions for different geographic regions from 1970 to 2023
 
 ---
 
