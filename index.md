@@ -18,7 +18,7 @@ Here is an interactive visualization of global CO₂ emissions by country and ye
 Here is an interactive visualization of CO₂ emissions by income regions. Use the buttons to explore historical data.
 
 <iframe src="images/co2_emissions_income_zone.html"
-        width="100%"
+        width="1050"
         height="750"
         frameborder="0"
         scrolling="no">
@@ -29,7 +29,7 @@ Here is an interactive visualization of CO₂ emissions by income regions. Use t
 Here is an interactive visualization of time-series CO₂ emissions for selected countries from the year 1970 to 2030. 
 
 <iframe src="images/co2_emissions_timeseries.html"
-        width="100%"
+        width="1050"
         height="750"
         frameborder="0"
         scrolling="no">
