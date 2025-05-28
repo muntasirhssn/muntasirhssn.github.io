@@ -10,7 +10,7 @@ The World Bank provides carbon dioxide (CO₂) emissions, specifically total CO�
 * The data suggests a strong link between economic development and emissions growth. Countries experiencing rapid economic expansion (e.g., Vietnam, United Arab Emirates) show marked increases in emissions, while some developed countries (e.g., Germany, Austria, Belgium) have stabilized or slightly reduced their emissions in recent years, likely due to policy interventions or shifts to cleaner energy.
 * While ‘High Income’ regions dominated the CO2 emissions pre-2020, the ‘Middle Income’ and ‘Upper Middle Income’ regions rapidly increased CO2 emissions after 2000, exceeding the emissions from ‘High Income’ regions. 
 
-##### Global CO₂ emissions
+#### Global CO₂ emissions
 <iframe src="images/co2_emissions_world_animation.html"
         width="1050"
         height="750"
@@ -19,7 +19,7 @@ The World Bank provides carbon dioxide (CO₂) emissions, specifically total CO�
 </iframe>
 Figure: Interactive visualization of global CO₂ emissions by country and year
 
-##### Time sereis CO₂ emissions
+#### Time sereis CO₂ emissions
 <iframe src="images/co2_emissions_timeseries.html"
         width="1050"
         height="750"
@@ -28,7 +28,7 @@ Figure: Interactive visualization of global CO₂ emissions by country and year
 </iframe>
 Figure: Time sereis CO₂ emissions for selected countries
 
-##### CO₂ emissions by income regions
+#### CO₂ emissions by income groups
 <iframe src="images/co2_emissions_bar_income_zone_cleaned.html"
         width="1050"
         height="750"
@@ -37,7 +37,7 @@ Figure: Time sereis CO₂ emissions for selected countries
 </iframe>
 Figure: Interactive visualization of CO₂ emissions for different income zones from 1970 to 2023
 
-##### CO₂ emissions by geographic regions
+#### CO₂ emissions by geographic regions
 <iframe src="images/co2_emissions_bar_geo_cleaned.html"
         width="1050"
         height="750"
