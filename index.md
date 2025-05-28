@@ -2,6 +2,41 @@
 
 ---
 
+## 🌍 Interactive CO₂ Emissions Map
+
+Here is an interactive visualization of global CO₂ emissions by country and year. Use the buttons to explore historical data.
+
+<iframe src="images/co2_emissions_animation.html"
+        width="1050"
+        height="750"
+        frameborder="0"
+        scrolling="no">
+</iframe>
+
+## 🌍 Interactive CO₂ Emissions Map
+
+Here is an interactive visualization of CO₂ emissions by income regions. Use the buttons to explore historical data.
+
+<iframe src="images/co2_emissions_income_zone.html"
+        width="100%"
+        height="750"
+        frameborder="0"
+        scrolling="no">
+</iframe>
+
+## 🌍 Interactive CO₂ Emissions Map
+
+Here is an interactive visualization of time-series CO₂ emissions for selected countries from the year 1970 to 2030. 
+
+<iframe src="images/co2_emissions_timeseries.html"
+        width="100%"
+        height="750"
+        frameborder="0"
+        scrolling="no">
+</iframe>
+
+---
+
 
 ### Generative AI: Retrieval-Augmented Generation (RAG) with LLMs, embeddings, vector databases and LangChain
 RAG is a technique that combines a retriever and a generative LLM to deliver accurate responses to queries. It involves retrieving relevant information from a large corpus and then generating contextually appropriate responses to queries. Here, I used the Llama 2 LLM and LangChain with GPU acceleration to perform generative question-answering (QA) with RAG.
