@@ -38,15 +38,6 @@ Figure: Time sereis CO₂ emissions for selected countries
 Figure: Interactive visualization of CO₂ emissions for different income zones from 1970 to 2023
 
 #### CO₂ emissions by geographic regions
-<iframe src="images/co2_emissions_bar_geo_cleaned.html"
-        width="1050"
-        height="750"
-        frameborder="0"
-        scrolling="no">
-</iframe>
-Figure: Interactive visualization of CO₂ emissions for different geographic regions from 1970 to 2023
-
-#### CO₂ emissions by geographic regions
 <iframe src="images/co2_emissions_pie_animation.html"
         width="1050"
         height="750"
