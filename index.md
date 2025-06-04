@@ -22,15 +22,11 @@ Figure: Actual and predicted energy usage over 10 weeks of time period.
 
 
 ### Retrieval-Augmented Generation (RAG) with LLMs, embeddings, vector databases, and LangChain
-RAG is a technique that combines a retriever and a generative LLM to deliver accurate responses to queries. It involves retrieving relevant information from a large corpus and then generating contextually appropriate responses to queries. Here, I used the Llama 2 LLM and LangChain with GPU acceleration to perform generative question-answering (QA) with RAG.
-
-![image](https://github.com/muntasirhsn/muntasirhsn.github.io/assets/29087240/cb5f2892-68a5-4d68-b9b4-568959b2595a) Figure: A schematic representation of RAG with a retriever and an LLM
-
-To get a hands-on introduction to RAG, [view my codes on GitHub](https://github.com/muntasirhsn/Retrieval-Augmented-Generation-with-Llama-2)
+RAG is a technique that combines a retriever and a generative LLM to deliver accurate responses to queries. It involves retrieving relevant information from a large corpus and then generating contextually appropriate responses to queries. Here, I used the open-source Llama 3 and Mistral v2 models and LangChain with GPU acceleration to perform generative question-answering (QA) with RAG.
 
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#)
 
-**Try the app below that uses the Llama 3 8B model and FAISS vector store for RAG on your PDF documents!**
+**Try my app below that uses the Llama 3/Mistral v2 models and FAISS vector store for RAG on your PDF documents!**
 
 <script
 	type="module"
@@ -38,7 +34,6 @@ To get a hands-on introduction to RAG, [view my codes on GitHub](https://github.
 ></script>
 
 <gradio-app src="https://muntasirhossain-rag-pdf-chatbot.hf.space"></gradio-app>
-
 
 ---
 
