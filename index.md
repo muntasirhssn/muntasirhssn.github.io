@@ -1,4 +1,4 @@
-# Selected demos in machine learning, deep learing, generative AI, data analysis, and computer vision. 
+# Selected projects in machine learning, deep learing, generative AI, data science, and computer vision. 
 
 
 ---
