@@ -26,7 +26,7 @@ RAG is a technique that combines a retriever and a generative LLM to deliver acc
 
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#)
 
-**Try my app below that uses the Llama 3/Mistral v2 models and FAISS vector store for RAG on your PDF documents!**
+**Try the app below that uses the Llama 3/Mistral v2 models and FAISS vector store for RAG on your PDF documents!**
 
 <script
 	type="module"
