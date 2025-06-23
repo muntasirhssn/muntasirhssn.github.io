@@ -39,22 +39,6 @@ Try the following conversational AI agent that uses the fine-tuned Llama 3 8B mo
 
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) 
 
----
-
-## Retrieval-Augmented Generation (RAG) with LLMs, embeddings, vector databases, and LangChain
-RAG is a technique that combines a retriever and a generative LLM to deliver accurate responses to queries. It involves retrieving relevant information from a large corpus and then generating contextually appropriate responses to queries. Here, I used the open-source Llama 3 and Mistral v2 models and LangChain with GPU acceleration to perform generative question-answering (QA) with RAG.
-
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#)
-
-**Try the app below that uses the Llama 3/Mistral v2 models and FAISS vector store for RAG on your PDF documents!**
-
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/4.31.0/gradio.js"
-></script>
-
-<gradio-app src="https://muntasirhossain-rag-pdf-chatbot.hf.space"></gradio-app>
-
 
 ---
 
@@ -160,7 +144,21 @@ YOLO (you only look once) is a state-of-the-art, real-time object detection and 
 [View project on GitHub](https://github.com/muntasirhsn/Deploying-YOLOv8-model-on-Amazon-SageMaker-endpoint)
 
 
+---
 
+## Retrieval-Augmented Generation (RAG) with LLMs, embeddings, vector databases, and LangChain
+RAG is a technique that combines a retriever and a generative LLM to deliver accurate responses to queries. It involves retrieving relevant information from a large corpus and then generating contextually appropriate responses to queries. Here, I used the open-source Llama 3 and Mistral v2 models and LangChain with GPU acceleration to perform generative question-answering (QA) with RAG.
+
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#)
+
+**Try the app below that uses the Llama 3/Mistral v2 models and FAISS vector store for RAG on your PDF documents!**
+
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/4.31.0/gradio.js"
+></script>
+
+<gradio-app src="https://muntasirhossain-rag-pdf-chatbot.hf.space"></gradio-app>
 ---
 
 
