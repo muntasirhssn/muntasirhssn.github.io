@@ -3,6 +3,24 @@
 
 ---
 
+## Retrieval-Augmented Generation (RAG) with LLMs, embeddings, vector databases, and LangChain
+RAG is a technique that combines a retriever and a generative LLM to deliver accurate responses to queries. It involves retrieving relevant information from a large corpus and then generating contextually appropriate responses to queries. Here, I used the open-source Llama 3 and Mistral v2 models and LangChain with GPU acceleration to perform generative question-answering (QA) with RAG.
+
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#)
+
+[View example codes for introduction to RAG on GitHub](https://github.com/muntasirhsn/Introduction-to-Retrieval-Augmented-Generation)
+
+**Try my app below that uses the Llama 3/Mistral v2 models and FAISS vector store for RAG on your PDF documents!**
+
+<iframe
+	src="https://muntasirhossain-rag-pdf-chatbot-3.hf.space"
+	frameborder="0"
+	width="550"
+	height="1000"
+></iframe>
+
+---
+
 ## Deep Learning: Multi-step energy usage forecasting with CNN-LSTM architecture
 This project implements a multi-step time-series forecasting model using a hybrid CNN-LSTM architecture. The 1D convolutional neural network (CNN) extracts local patterns (e.g., short-term fluctuations, trends) from the input sequence, while the LSTM network captures long-term temporal dependencies. Unlike recursive single-step prediction, the model performs direct multi-step forecasting (Seq2Seq), outputting am entire future sequence of values at once. Trained on historical energy data, the model forecasts weekly energy consumption over a consecutive 10-week horizon, achieving a Mean Absolute Percentage Error (MAPE) of 10% (equivalent to an overall accuracy of 90%). The results demonstrate robust performance for long-range forecasting, highlighting the effectiveness of combining CNNs for feature extraction and LSTMs for sequential modeling in energy demand prediction.
 
@@ -18,23 +36,7 @@ Figure: Actual and predicted energy usage over 10 weeks of time period.
 
 [View example codes on GitHub](https://github.com/muntasirhsn/CNN-LSTM-model-for-energy-usage-forecasting)
 
----
 
-## Retrieval-Augmented Generation (RAG) with LLMs, embeddings, vector databases, and LangChain
-RAG is a technique that combines a retriever and a generative LLM to deliver accurate responses to queries. It involves retrieving relevant information from a large corpus and then generating contextually appropriate responses to queries. Here, I used the open-source Llama 3 and Mistral v2 models and LangChain with GPU acceleration to perform generative question-answering (QA) with RAG.
-
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#)
-
-[View example codes for introduction to RAG on GitHub](https://github.com/muntasirhsn/Introduction-to-Retrieval-Augmented-Generation)
-
-**Try the app below that uses the Llama 3/Mistral v2 models and FAISS vector store for RAG on your PDF documents!**
-
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/4.31.0/gradio.js"
-></script>
-
-<gradio-app src="https://muntasirhossain-rag-pdf-chatbot.hf.space"></gradio-app>
 
 ---
 
