@@ -63,17 +63,6 @@ Fine-tuning an LLM (e.g. full fine-tuning) for a particular task can be computat
 
 [Check the model on Hugging Face hub!](https://huggingface.co/MuntasirHossain/Meta-Llama-3-8B-OpenOrca)
 
-Try the following conversational AI agent that uses the fine-tuned Llama 3 8B model in the backend! **Please note: the app is running on a basic CPU! A low-precision version of the fine-tuned LLM is deployed to overcome the hardware restrictions. Hence, performances may not be up to the model's full potential and responses may be slow!**
-
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/4.31.3/gradio.js"
-></script>
-
-<gradio-app src="https://muntasirhossain-fine-tuned-llama-3-8b-chatbot.hf.space"></gradio-app>
-
-
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) 
 
 
 ---
