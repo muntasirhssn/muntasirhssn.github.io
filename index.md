@@ -3,6 +3,14 @@
 
 ---
 
+
+## Parameter-efficient fine-tuning of LLMs with Quantized Low-Rank Adaptation (QLoRA)
+Fine-tuning an LLM (e.g. full fine-tuning) for a particular task can be computationally intensive as it involves updating all the LLM model parameters. Parameter-efficient fine-tuning (PEFT) updates only a small subset of parameters, allowing LLM fine-tuning with limited resources. Here, I have fine-tuned the [Llama-3-8B](meta-llama/Meta-Llama-3-8B) foundation model with QLoRA, a form of PEFT, by using NVIDIA L4 GPUs. In QLoRA, the pre-trained model weights are first quantized with 4-bit NormalFloat (NF4). The original model weights are frozen while trainable low-rank decomposition weight matrices are introduced and modified during the fine-tuning process, allowing for memory-efficient fine-tuning of the LLM without the need to retrain the entire model from scratch.  
+
+[Check the model on Hugging Face hub!](https://huggingface.co/MuntasirHossain/Meta-Llama-3-8B-OpenOrca)
+
+---
+
 ## Retrieval-Augmented Generation (RAG) with LLMs, embeddings, vector databases, and LangChain
 RAG is a technique that combines a retriever and a generative LLM to deliver accurate responses to queries. It involves retrieving relevant information from a large corpus and then generating contextually appropriate responses to queries. Here, I used the open-source Llama 3 and Mistral v2 models and LangChain with GPU acceleration to perform generative question-answering (QA) with RAG.
 
@@ -23,7 +31,19 @@ RAG is a technique that combines a retriever and a generative LLM to deliver acc
 
 ---
 
-## Deep Learning: Multi-step energy usage forecasting with CNN-LSTM architecture
+
+## Computer Vision: Deploying YOLOv8 model at scale with Amazon Sagemaker Endpoints
+YOLO (you only look once) is a state-of-the-art, real-time object detection and image segmentation model used in computer vision. The latest model YOLOv8 is  known for its runtime efficiency as well as detection accuracy. To fully utilise its potential, deploying the model at scale is crucial. Here, a YOLOv8 model was hosted on the Amazon SageMaker endpoint and inference was run for input images/videos for object detection.
+
+<img src="images/highway1-detect3.gif?raw=true"/> Figure: Object detection with YOLOv8 model deployed to a real-time Amazon SageMaker endpoint
+
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![YOLO](https://img.shields.io/badge/YOLO-Object%20Detection-white)](https://github.com/AlexeyAB/darknet) [![AWS](https://img.shields.io/badge/AWS-Cloud-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/) [![Amazon Sagemaker](https://img.shields.io/badge/Sagemaker-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/sagemaker/) 
+
+[View project on GitHub](https://github.com/muntasirhsn/Deploying-YOLOv8-model-on-Amazon-SageMaker-endpoint)
+
+---
+
+## Multi-step energy usage forecasting with CNN-LSTM neural networks
 This project implements a multi-step time-series forecasting model using a hybrid CNN-LSTM architecture. The 1D convolutional neural network (CNN) extracts local patterns (e.g., short-term fluctuations, trends) from the input sequence, while the LSTM network captures long-term temporal dependencies. Unlike recursive single-step prediction, the model performs direct multi-step forecasting (Seq2Seq), outputting am entire future sequence of values at once. Trained on historical energy data, the model forecasts weekly energy consumption over a consecutive 10-week horizon, achieving a Mean Absolute Percentage Error (MAPE) of 10% (equivalent to an overall accuracy of 90%). The results demonstrate robust performance for long-range forecasting, highlighting the effectiveness of combining CNNs for feature extraction and LSTMs for sequential modeling in energy demand prediction.
 
 <iframe src="images/forecasting_2.html"
@@ -42,6 +62,18 @@ Figure: Actual and predicted energy usage over 10 weeks of time period.
 
 ---
 
+
+## Reinforcement Learning with Human Feedback (RLHF) 
+Reinforcement Learning with Human Feedback (RLHF) is a cutting-edge approach used to fine-tune Large Language Models (LLMs) to generate outputs that align more closely with human preferences and expectations. Here, I utilised RLHF to further fine-tune a [Google Flan-T5 Large](https://huggingface.co/MuntasirHossain/flan-t5-large-samsum-qlora) and generate less toxic content. The model was previously fine-tuned for generative summarisation with PEFT. A [binary classifier model](https://huggingface.co/facebook/roberta-hate-speech-dynabench-r4-target) from Meta AI was used as the reward model to score and reward the LLM output based on the toxicity level. The LLM was fine-tuned with Proximal Policy Optimization (PPO) using those reward values. The iterative process for maximising cumulative rewards and fine-tuning with PPO enables detoxified LLM outputs. To ensure that the model does not deviate from generating content that is too far from the original LLM, KL-divergence was employed during the iterative training process.
+
+[Check the model on Hugging Face hub!](https://huggingface.co/MuntasirHossain/flan-t5-large-samsum-qlora-ppo)
+
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) 
+
+
+
+---
+
 ## MLOps with AWS: Train and deploy ML models at scale with automated pipelines
 Develop an end-to-end machine learning (ML) workflow with automation for all the steps including data preprocessing, training models at scale with distributed computing (GPUs/CPUs), model evaluation, deploying in production, model monitoring and drift detection with Amazon SageMaker Pipeline - a purpose-built CI/CD service.
 
@@ -55,25 +87,6 @@ Develop an end-to-end machine learning (ML) workflow with automation for all the
 [View codes on GitHub](https://github.com/muntasirhsn/MLOps-with-AWS)
 
 
----
-
-
-## Parameter-efficient fine-tuning of LLMs with Quantized Low-Rank Adaptation (QLoRA)
-Fine-tuning an LLM (e.g. full fine-tuning) for a particular task can be computationally intensive as it involves updating all the LLM model parameters. Parameter-efficient fine-tuning (PEFT) updates only a small subset of parameters, allowing LLM fine-tuning with limited resources. Here, I have fine-tuned the [Llama-3-8B](meta-llama/Meta-Llama-3-8B) foundation model with QLoRA, a form of PEFT, by using NVIDIA L4 GPUs. In QLoRA, the pre-trained model weights are first quantized with 4-bit NormalFloat (NF4). The original model weights are frozen while trainable low-rank decomposition weight matrices are introduced and modified during the fine-tuning process, allowing for memory-efficient fine-tuning of the LLM without the need to retrain the entire model from scratch.  
-
-[Check the model on Hugging Face hub!](https://huggingface.co/MuntasirHossain/Meta-Llama-3-8B-OpenOrca)
-
-
-
----
-
-
-## Reinforcement Learning with Human Feedback (RLHF) 
-Reinforcement Learning with Human Feedback (RLHF) is a cutting-edge approach used to fine-tune Large Language Models (LLMs) to generate outputs that align more closely with human preferences and expectations. Here, I utilised RLHF to further fine-tune a [Google Flan-T5 Large](https://huggingface.co/MuntasirHossain/flan-t5-large-samsum-qlora) and generate less toxic content. The model was previously fine-tuned for generative summarisation with PEFT. A [binary classifier model](https://huggingface.co/facebook/roberta-hate-speech-dynabench-r4-target) from Meta AI was used as the reward model to score and reward the LLM output based on the toxicity level. The LLM was fine-tuned with Proximal Policy Optimization (PPO) using those reward values. The iterative process for maximising cumulative rewards and fine-tuning with PPO enables detoxified LLM outputs. To ensure that the model does not deviate from generating content that is too far from the original LLM, KL-divergence was employed during the iterative training process.
-
-[Check the model on Hugging Face hub!](https://huggingface.co/MuntasirHossain/flan-t5-large-samsum-qlora-ppo)
-
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) 
 
 
 
@@ -140,19 +153,6 @@ Figure: Interactive visualization of CO₂ emissions for different income zones 
 </iframe>
 Figure: Interactive visualization of CO₂ emissions for different geographic regions from 1970 to 2023
 
-
-
----
-
-
-## Computer Vision: Deploying YOLOv8 model at scale with Amazon Sagemaker Endpoints
-YOLO (you only look once) is a state-of-the-art, real-time object detection and image segmentation model used in computer vision. The latest model YOLOv8 is  known for its runtime efficiency as well as detection accuracy. To fully utilise its potential, deploying the model at scale is crucial. Here, a YOLOv8 model was hosted on the Amazon SageMaker endpoint and inference was run for input images/videos for object detection.
-
-<img src="images/highway1-detect3.gif?raw=true"/> Figure: Object detection with YOLOv8 model deployed to a real-time Amazon SageMaker endpoint
-
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![YOLO](https://img.shields.io/badge/YOLO-Object%20Detection-white)](https://github.com/AlexeyAB/darknet) [![AWS](https://img.shields.io/badge/AWS-Cloud-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/) [![Amazon Sagemaker](https://img.shields.io/badge/Sagemaker-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/sagemaker/) 
-
-[View project on GitHub](https://github.com/muntasirhsn/Deploying-YOLOv8-model-on-Amazon-SageMaker-endpoint)
 
 
 
