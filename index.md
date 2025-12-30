@@ -51,7 +51,7 @@ Develop an end-to-end machine learning (ML) workflow with automation for all the
 
 
 ## LLM Alignment with Reinforcement Learning (RLHF & PPO) 
-Reinforcement Learning with Human Feedback (RLHF) is a cutting-edge approach used to fine-tune Large Language Models (LLMs) to generate outputs that align more closely with human preferences and expectations. Here, I utilised RLHF to further fine-tune a [Google Flan-T5 Large](https://huggingface.co/MuntasirHossain/flan-t5-large-samsum-qlora) and generate less toxic content. The model was previously fine-tuned for generative summarisation with PEFT. A [binary classifier model](https://huggingface.co/facebook/roberta-hate-speech-dynabench-r4-target) from Meta AI was used as the reward model to score and reward the LLM output based on the toxicity level. The LLM was fine-tuned with Proximal Policy Optimization (PPO) using those reward values. The iterative process for maximising cumulative rewards and fine-tuning with PPO enables detoxified LLM outputs. To ensure that the model does not deviate from generating content that is too far from the original LLM, KL-divergence was employed during the iterative training process.
+Fine-tuned a Google Flan-T5 language model for reduced toxicity using Reinforcement Learning with Human Feedback (RLHF). Implemented a PPO training loop with a learned reward model to guide generation toward lower-toxicity outputs, applying KL-divergence regularisation to maintain alignment with the base model. The model was adapted using parameter-efficient fine-tuning.
 
 [Check the model on Hugging Face hub!](https://huggingface.co/MuntasirHossain/flan-t5-large-samsum-qlora-ppo)
 
