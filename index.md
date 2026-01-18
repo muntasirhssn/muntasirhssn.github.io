@@ -47,6 +47,8 @@ A follow-up Giskard scan showed improved behavior:
 
 This project demonstrates a complete red-teaming loop — evaluation, failure analysis, mitigation, and re-evaluation — and shows how safety behavior can be systematically improved without increasing risk or cost.
 
+[View project and source codes on GitHub](https://github.com/muntasirhsn/Red-Teaming-a-Policy-Assistant-with-Giskard)
+
 ---
 
 ## Retrieval-Augmented Generation (RAG) with LLMs and Vector Databases
