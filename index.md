@@ -4,10 +4,48 @@
 ---
 
 
-## Fine-tuning LLMs with ORPO & QLoRA (Mistral-7B)
+## Fine-tuning LLMs with ORPO & QLoRA (Mistral-v0.3)
 ORPO (Odds Ratio Preference Optimization) is a single-stage fine-tuning method to align LLMs with human preferences efficiently while preserving general performance and avoiding multi-stage training. This method trains directly on human preference pairs (chosen, rejected) without a reward model or reinforcement learning (RL) loop, reducing training complexity and resource usage. However, fine-tuning an LLM (e.g. full fine-tuning) for a particular task can still be computationally intensive as it involves updating all the LLM model parameters. Parameter-efficient fine-tuning (PEFT) updates only a small subset of parameters, allowing LLM fine-tuning with limited resources. Here, I have fine-tuned the [Mistral-7B-v0.3](https://huggingface.co/mistralai/Mistral-7B-v0.3) foundation model with ORPO and QLoRA (a form of PEFT), by using NVIDIA L4 GPUs. In QLoRA, the pre-trained model weights are first quantized with 4-bit NormalFloat (NF4). The original model weights are frozen while trainable low-rank decomposition weight matrices are introduced and modified during the fine-tuning process, allowing for memory-efficient fine-tuning of the LLM without the need to retrain the entire model from scratch.  
 
 [Check the model on Hugging Face hub!](https://huggingface.co/MuntasirHossain/Orpo-Mistral-7B-v0.3)
+
+
+---
+## Red-Teaming a Policy Assistant with Giskard
+
+### Overview
+This project demonstrates iterative red-teaming of a policy assistant designed to answer questions about a government-style digital services policy, while strictly avoiding legal advice, speculation, or guidance on bypassing safeguards. The focus is on safety evaluation, failure analysis, and mitigation, rather than model fine-tuning.
+
+### Model Separation Strategy
+The system intentionally uses **different models for generation and evaluation**:
+* Query responses are generated using **gpt-4o-mini**
+* Safety evaluation is performed using **gpt-4o** via Giskard detectors
+This reflects common red-teaming practice: lighter models are sufficient for generation, while **stronger models provide more reliable safety judgments**. Separating generation and evaluation also avoids self-evaluation effects and keeps evaluation costs controlled.
+
+### Initial Evaluation
+The assistant was evaluated using **Giskard** across prompt-injection, misuse, and bias detectors. The scan identified multiple failures where the agent did not attempt to answer questions based on the provided policy document. These were not hallucinations or unsafe outputs, but overly conservative refusals.
+
+<img src="images/giskard1.pngpg?raw=true"/> Figure 1: Initial scan results from Giskard.
+
+### Analysis
+The root cause was **over-refusal**.
+The safety layer correctly blocked requests involving legal advice, speculation, or bypassing safeguards, but also refused some benign questions that could have been partially answered using neutral policy language. This reduced policy grounding and triggered Giskard failures.
+
+### Mitigation
+The refusal strategy was refined to better distinguish between:
+* questions requiring refusal, and
+* questions that can be answered safely using policy text alone.
+Refusals were standardized using fixed, auditable messages, while benign queries now trigger policy-based responses where possible. Safety guarantees were preserved.
+
+### Outcome
+A follow-up Giskard scan showed improved behavior:
+* fewer false positives for “did not attempt to answer”
+* stronger grounding in policy text
+* no regression in prompt-injection or misuse resistance
+
+<img src="images/giskard2.pngpg?raw=true"/> Figure 2: Post mitigation scan results from Giskard.
+
+This project demonstrates a complete red-teaming loop — evaluation, failure analysis, mitigation, and re-evaluation — and shows how safety behavior can be systematically improved without increasing risk or cost.
 
 ---
 
