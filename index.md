@@ -25,7 +25,7 @@ This reflects common red-teaming practice: lighter models are sufficient for gen
 ### Initial Evaluation
 The assistant was evaluated using **Giskard** across prompt-injection, misuse, and bias detectors. The scan identified multiple failures where the agent did not attempt to answer questions based on the provided policy document. These were not hallucinations or unsafe outputs, but overly conservative refusals.
 
-<img src="images/giskard1.pngpg?raw=true"/> Figure 1: Initial scan results from Giskard.
+<img src="images/giskard1.png?raw=true"/> Figure 1: Initial scan results from Giskard.
 
 ### Analysis
 The root cause was **over-refusal**.
@@ -43,7 +43,7 @@ A follow-up Giskard scan showed improved behavior:
 * stronger grounding in policy text
 * no regression in prompt-injection or misuse resistance
 
-<img src="images/giskard2.pngpg?raw=true"/> Figure 2: Post mitigation scan results from Giskard.
+<img src="images/giskard2.png?raw=true"/> Figure 2: Post mitigation scan results from Giskard.
 
 This project demonstrates a complete red-teaming loop — evaluation, failure analysis, mitigation, and re-evaluation — and shows how safety behavior can be systematically improved without increasing risk or cost.
 
