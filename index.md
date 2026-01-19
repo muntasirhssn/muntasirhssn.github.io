@@ -1,4 +1,4 @@
-# Selected projects in generative AI, machine learning, deep learing, and MLOps. 
+# Selected projects in generative AI, AI safety, machine learning, deep learing, and MLOps. 
 
 
 ---
