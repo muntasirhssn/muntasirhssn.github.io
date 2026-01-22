@@ -11,7 +11,7 @@ ORPO (Odds Ratio Preference Optimization) is a single-stage fine-tuning method t
 
 
 ---
-## Red-Teaming a Policy Assistant with Giskard
+## Red-Teaming an LLM-based Policy Assistant
 
 ### Overview
 This project demonstrates iterative red-teaming of a policy assistant designed to answer questions about a government-style digital services policy, while strictly avoiding legal advice, speculation, or guidance on bypassing safeguards. The focus is on safety evaluation, failure analysis, and mitigation, rather than model fine-tuning.
