@@ -11,6 +11,63 @@ ORPO (Odds Ratio Preference Optimization) is a single-stage fine-tuning method t
 
 
 ---
+
+## MLOps with AWS: End-to-End ML Pipelines and Deployment
+Develop an end-to-end machine learning (ML) workflow with automation for all the steps including data preprocessing, training models at scale with distributed computing (GPUs/CPUs), model evaluation, deploying in production, model monitoring and drift detection with Amazon SageMaker Pipeline - a purpose-built CI/CD service.
+
+
+<img src="images/MLOps6_Muntasir Hossain.jpg?raw=true"/> Figure: ML orchestration reference architecture with AWS
+
+<img src="images/Sageaker Pipeline5.png?raw=true"/> Figure: CI/CD pipeline with Amazon Sagemaker 
+
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![AWS](https://img.shields.io/badge/AWS-Cloud-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/)  [![Amazon Sagemaker](https://img.shields.io/badge/Sagemaker-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/sagemaker/) [![Amazon API Gateway](https://img.shields.io/badge/API_Gateway-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/api-gateway/) 
+
+[View codes on GitHub](https://github.com/muntasirhsn/MLOps-with-AWS)
+
+
+
+---
+
+
+## Neural Network-Based Time-Series Forecasting (CNN-LSTM)
+This project implements a multi-step time-series forecasting model using a hybrid CNN-LSTM architecture. The 1D convolutional neural network (CNN) extracts local patterns (e.g., short-term fluctuations, trends) from the input sequence, while the LSTM network captures long-term temporal dependencies. Unlike recursive single-step prediction, the model performs direct multi-step forecasting (Seq2Seq), outputting am entire future sequence of values at once. Trained on historical energy data, the model forecasts weekly energy consumption over a consecutive 10-week horizon, achieving a Mean Absolute Percentage Error (MAPE) of 10% (equivalent to an overall accuracy of 90%). The results demonstrate robust performance for long-range forecasting, highlighting the effectiveness of combining CNNs for feature extraction and LSTMs for sequential modeling in energy demand prediction.
+
+<iframe src="images/forecasting_2.html"
+        width="650"
+        height="350"
+        frameborder="0"
+        scrolling="no">
+</iframe>
+Figure: Actual and predicted energy usage over 10 weeks of time period.
+
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/TensorFlow-white?logo=TensorFlow)](#) [![](https://img.shields.io/badge/-Keras-white?logo=Keras&logoColor=black)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#)
+
+[View example codes on GitHub](https://github.com/muntasirhsn/CNN-LSTM-model-for-energy-usage-forecasting)
+
+
+---
+
+## Retrieval-Augmented Generation (RAG) with LLMs and Vector Databases
+RAG is a technique that combines a retriever and a generative LLM to deliver accurate responses to queries. It involves retrieving relevant information from a large corpus and then generating contextually appropriate responses to queries. Here, I used the open-source Llama 3 and Mistral v2 models and LangChain with GPU acceleration to perform generative question-answering (QA) with RAG.
+
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#)
+
+[View example codes for introduction to RAG on GitHub](https://github.com/muntasirhsn/Introduction-to-Retrieval-Augmented-Generation)
+
+**Try my app below that uses the Llama 3/Mistral v2 models and FAISS vector store for RAG on your PDF documents!**
+
+<div>
+  <iframe 
+    src="https://muntasirhossain-rag-pdf-chatbot.hf.space" 
+    width="770" 
+    height="1000"
+    style="border: 1px solid #d1d5db; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); transform:scale(0.95); transform-origin:0 0"
+  ></iframe>
+</div>
+
+
+
+---
 ## Red-Teaming an LLM-based Policy Assistant
 
 ### Overview
@@ -49,40 +106,6 @@ This project demonstrates a complete red-teaming loop — evaluation, failure an
 
 [View project and source codes on GitHub](https://github.com/muntasirhsn/Red-Teaming-a-Policy-Assistant-with-Giskard)
 
----
-
-## Retrieval-Augmented Generation (RAG) with LLMs and Vector Databases
-RAG is a technique that combines a retriever and a generative LLM to deliver accurate responses to queries. It involves retrieving relevant information from a large corpus and then generating contextually appropriate responses to queries. Here, I used the open-source Llama 3 and Mistral v2 models and LangChain with GPU acceleration to perform generative question-answering (QA) with RAG.
-
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#)
-
-[View example codes for introduction to RAG on GitHub](https://github.com/muntasirhsn/Introduction-to-Retrieval-Augmented-Generation)
-
-**Try my app below that uses the Llama 3/Mistral v2 models and FAISS vector store for RAG on your PDF documents!**
-
-<div>
-  <iframe 
-    src="https://muntasirhossain-rag-pdf-chatbot.hf.space" 
-    width="770" 
-    height="1000"
-    style="border: 1px solid #d1d5db; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); transform:scale(0.95); transform-origin:0 0"
-  ></iframe>
-</div>
-
-
----
-
-## MLOps with AWS: End-to-End ML Pipelines and Deployment
-Develop an end-to-end machine learning (ML) workflow with automation for all the steps including data preprocessing, training models at scale with distributed computing (GPUs/CPUs), model evaluation, deploying in production, model monitoring and drift detection with Amazon SageMaker Pipeline - a purpose-built CI/CD service.
-
-
-<img src="images/MLOps6_Muntasir Hossain.jpg?raw=true"/> Figure: ML orchestration reference architecture with AWS
-
-<img src="images/Sageaker Pipeline5.png?raw=true"/> Figure: CI/CD pipeline with Amazon Sagemaker 
-
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![AWS](https://img.shields.io/badge/AWS-Cloud-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/)  [![Amazon Sagemaker](https://img.shields.io/badge/Sagemaker-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/sagemaker/) [![Amazon API Gateway](https://img.shields.io/badge/API_Gateway-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/api-gateway/) 
-
-[View codes on GitHub](https://github.com/muntasirhsn/MLOps-with-AWS)
 
 
 
@@ -98,23 +121,6 @@ Fine-tuned a Google Flan-T5 language model for reduced toxicity using Reinforcem
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) 
 
 
----
-
-
-## Neural Network-Based Time-Series Forecasting (CNN-LSTM)
-This project implements a multi-step time-series forecasting model using a hybrid CNN-LSTM architecture. The 1D convolutional neural network (CNN) extracts local patterns (e.g., short-term fluctuations, trends) from the input sequence, while the LSTM network captures long-term temporal dependencies. Unlike recursive single-step prediction, the model performs direct multi-step forecasting (Seq2Seq), outputting am entire future sequence of values at once. Trained on historical energy data, the model forecasts weekly energy consumption over a consecutive 10-week horizon, achieving a Mean Absolute Percentage Error (MAPE) of 10% (equivalent to an overall accuracy of 90%). The results demonstrate robust performance for long-range forecasting, highlighting the effectiveness of combining CNNs for feature extraction and LSTMs for sequential modeling in energy demand prediction.
-
-<iframe src="images/forecasting_2.html"
-        width="650"
-        height="350"
-        frameborder="0"
-        scrolling="no">
-</iframe>
-Figure: Actual and predicted energy usage over 10 weeks of time period.
-
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/TensorFlow-white?logo=TensorFlow)](#) [![](https://img.shields.io/badge/-Keras-white?logo=Keras&logoColor=black)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#)
-
-[View example codes on GitHub](https://github.com/muntasirhsn/CNN-LSTM-model-for-energy-usage-forecasting)
 
 ---
 
