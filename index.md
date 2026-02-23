@@ -19,8 +19,8 @@ Please try the agentic app below:
 
 <iframe 
     src="https://multi-agent-research-workflow-production.up.railway.app/" 
-    width="100%" 
-    height="700px" 
+    width="650" 
+    height="1000px" 
     frameborder="0"
     style="border: 1px solid #ddd; border-radius: 8px;"
 ></iframe>
