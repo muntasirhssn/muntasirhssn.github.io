@@ -9,6 +9,8 @@ ORPO (Odds Ratio Preference Optimization) is a single-stage fine-tuning method t
 
 [Check the model on Hugging Face hub!](https://huggingface.co/MuntasirHossain/Orpo-Mistral-7B-v0.3)
 
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/Transformers-white?logo=huggingface)](#) 
+
 
 ---
 
@@ -24,6 +26,8 @@ This multi-agent system orchestrates a sophisticated research workflow by deploy
     frameborder="0"
     style="border: 1px solid #ddd; border-radius: 8px;"
 ></iframe>
+
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/OpenAI-000000?logo=openai&logoColor=white)](#)
 
 ---
 
