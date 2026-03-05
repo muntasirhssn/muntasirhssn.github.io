@@ -17,7 +17,7 @@ ORPO (Odds Ratio Preference Optimization) is a single-stage fine-tuning method t
 ## Multi-Agent Workflow for Analytical Reporting
 This multi-agent system orchestrates a sophisticated research workflow by deploying a coordinated team of AI specialists. Starting from a single topic, the planner agent intelligently maps out a customized research strategy, breaking complex questions into logical subtasks. An executor agent then dynamically routes each task to the right specialist: the research agent systematically gathers evidence by intelligently querying web content, academic papers via arXiv, and Wikipedia summaries; the writer agent synthesizes findings into a coherent draft; and the editor agent polishes the language and ensures analytical rigor. The entire process unfolds autonomously—agents collaborate seamlessly, passing context forward, while the system decides in real-time which research tools to deploy and when. The result is a thoroughly researched, professionally formatted Markdown report that users can instantly download as a polished PDF.
 
-**Please try the agentic app below**.
+**Please try the agentic app below (deployed over the cloud using Docker)**:
 
 <iframe 
     src="https://multi-agent-research-workflow-production.up.railway.app/" 
@@ -28,7 +28,7 @@ This multi-agent system orchestrates a sophisticated research workflow by deploy
 ></iframe>
 
 
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/OpenAI-000000?logo=openai&logoColor=white)](#)
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/OpenAI-000000?logo=openai&logoColor=white)](#) [![](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)](#)
 
 ---
 
@@ -42,9 +42,10 @@ Develop an end-to-end machine learning (ML) workflow with automation for all the
 
 <img src="images/Sageaker Pipeline5.png?raw=true"/> Figure: CI/CD pipeline with Amazon Sagemaker 
 
+[View codes on GitHub](https://github.com/muntasirhsn/MLOps-with-AWS)
+
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![AWS](https://img.shields.io/badge/AWS-Cloud-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/)  [![Amazon Sagemaker](https://img.shields.io/badge/Sagemaker-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/sagemaker/) [![Amazon API Gateway](https://img.shields.io/badge/API_Gateway-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/api-gateway/) 
 
-[View codes on GitHub](https://github.com/muntasirhsn/MLOps-with-AWS)
 
 
 
@@ -62,9 +63,9 @@ This project implements a multi-step time-series forecasting model using a hybri
 </iframe>
 Figure: Actual and predicted energy usage over 10 weeks of time period.
 
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/TensorFlow-white?logo=TensorFlow)](#) [![](https://img.shields.io/badge/-Keras-white?logo=Keras&logoColor=black)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#)
-
 [View example codes on GitHub](https://github.com/muntasirhsn/CNN-LSTM-model-for-energy-usage-forecasting)
+
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/TensorFlow-white?logo=TensorFlow)](#) [![](https://img.shields.io/badge/-Keras-white?logo=Keras&logoColor=black)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#)
 
 
 ---
@@ -88,6 +89,7 @@ RAG is a technique that combines a retriever and a generative LLM to deliver acc
 </div>
 
 
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/Transformers-white?logo=huggingface)](#) [![](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=black)](#)
 
 ---
 ## Evaluating Safety and Vulnerabilities of LLM apps
@@ -128,7 +130,7 @@ This project demonstrates a complete red-teaming loop — evaluation, failure an
 
 [View project and source codes on GitHub](https://github.com/muntasirhsn/Red-Teaming-a-Policy-Assistant-with-Giskard)
 
-
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/OpenAI-000000?logo=openai&logoColor=white)](#) [![](https://img.shields.io/badge/Giskard-4B2E83?logo=giskard&logoColor=white)](#)
 
 
 
@@ -152,9 +154,10 @@ YOLO (you only look once) is a state-of-the-art, real-time object detection and 
 
 <img src="images/highway1-detect3.gif?raw=true"/> Figure: Object detection with YOLOv8 model deployed to a real-time Amazon SageMaker endpoint
 
+[View project on GitHub](https://github.com/muntasirhsn/Deploying-YOLOv8-model-on-Amazon-SageMaker-endpoint)
+
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![YOLO](https://img.shields.io/badge/YOLO-Object%20Detection-white)](https://github.com/AlexeyAB/darknet) [![AWS](https://img.shields.io/badge/AWS-Cloud-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/) [![Amazon Sagemaker](https://img.shields.io/badge/Sagemaker-white?logo=amazon-aws&logoColor=orange)](https://aws.amazon.com/sagemaker/) 
 
-[View project on GitHub](https://github.com/muntasirhsn/Deploying-YOLOv8-model-on-Amazon-SageMaker-endpoint)
 
 
 
