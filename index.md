@@ -1,10 +1,24 @@
-# Selected projects in  machine learning, deep learning, generative AI, MLOps, and AI safety.  
+# Selected projects in  Agentic AI, Machine Learning, LLMs, MLOps, and AI safety.  
+
+---
+## Multi-Agent Workflow for Analytical Reporting
+This project demonstrates an automated workflow for analytical report generation. A coordinated set of AI agents decomposes complex topics into structured tasks, retrieves relevant information from multiple sources, and synthesises findings into a coherent report. The system supports efficient information gathering, structured analysis, and clear communication of insights, reflecting a practical approach to scaling analytical reporting.
+Please try the agentic app below (deployed over the cloud using Docker):
+<iframe 
+    src="https://multi-agent-research-workflow-production.up.railway.app/" 
+    width="650" 
+    height="900px" 
+    frameborder="0"
+    style="border: 1px solid #ddd; border-radius: 8px;"
+></iframe>
+
+![](https://img.shields.io/badge/Python-white?logo=Python) ![](https://img.shields.io/badge/OpenAI-000000?logo=openai&logoColor=white) ![](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
 
 ---
 
 
-## Fine-tuning LLMs with ORPO & QLoRA
+## Fine-tuning LLMs with ORPO, QLoRA, and HuggingFace Transformers
 ORPO (Odds Ratio Preference Optimization) is a single-stage fine-tuning method to align LLMs with human preferences efficiently while preserving general performance and avoiding multi-stage training. This method trains directly on human preference pairs (chosen, rejected) without a reward model or reinforcement learning (RL) loop, reducing training complexity and resource usage. However, fine-tuning an LLM (e.g. full fine-tuning) for a particular task can still be computationally intensive as it involves updating all the LLM model parameters. Parameter-efficient fine-tuning (PEFT) updates only a small subset of parameters, allowing LLM fine-tuning with limited resources. Here, I have fine-tuned the [Mistral-7B-v0.3](https://huggingface.co/mistralai/Mistral-7B-v0.3) foundation model with ORPO and QLoRA (a form of PEFT), by using NVIDIA L4 GPUs. In QLoRA, the pre-trained model weights are first quantized with 4-bit NormalFloat (NF4). The original model weights are frozen while trainable low-rank decomposition weight matrices are introduced and modified during the fine-tuning process, allowing for memory-efficient fine-tuning of the LLM without the need to retrain the entire model from scratch.  
 
 [Check the model on Hugging Face hub!](https://huggingface.co/MuntasirHossain/Orpo-Mistral-7B-v0.3)
