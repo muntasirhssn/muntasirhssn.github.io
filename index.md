@@ -1,8 +1,26 @@
 # Selected projects in  Agentic AI, Machine Learning, LLMs, MLOps, and AI safety.  
 
 ---
+
+
+## Neural Network-Based Time-Series Forecasting
+This project implements a multi-step time-series forecasting model using a hybrid CNN-LSTM architecture. The 1D convolutional neural network (CNN) extracts local patterns (e.g., short-term fluctuations, trends) from the input sequence, while the LSTM network captures long-term temporal dependencies. Unlike recursive single-step prediction, the model performs direct multi-step forecasting (Seq2Seq), outputting am entire future sequence of values at once. Trained on historical energy data, the model forecasts weekly energy consumption over a consecutive 10-week horizon, achieving a Mean Absolute Percentage Error (MAPE) of 10% (equivalent to an overall accuracy of 90%). The results demonstrate robust performance for long-range forecasting, highlighting the effectiveness of combining CNNs for feature extraction and LSTMs for sequential modeling in energy demand prediction.
+
+<iframe src="images/forecasting_2.html"
+        width="650"
+        height="350"
+        frameborder="0"
+        scrolling="no">
+</iframe>
+Figure: Actual and predicted energy usage over 10 weeks of time period.
+
+[View example codes on GitHub](https://github.com/muntasirhsn/CNN-LSTM-model-for-energy-usage-forecasting)
+
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/TensorFlow-white?logo=TensorFlow)](#) [![](https://img.shields.io/badge/-Keras-white?logo=Keras&logoColor=black)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#)
+
+---
 ## Multi-Agent Workflow for Analytical Reporting
-This project demonstrates an automated workflow for analytical report generation. A coordinated set of AI agents decomposes complex topics into structured tasks, retrieves relevant information from multiple sources, and synthesises findings into a coherent report. The system supports efficient information gathering, structured analysis, and clear communication of insights, reflecting a practical approach to scaling analytical reporting.
+This project demonstrates an automated workflow for analytical report generation. A coordinated set of AI agents decomposes complex topics into structured tasks, retrieves relevant information from multiple sources by using tools (web search, archive, and Wikipedia extractor), and synthesises findings into a coherent report. The system supports efficient information gathering, structured analysis, and clear communication of insights, reflecting a practical approach to scaling analytical reporting.
 Please try the agentic app below (deployed over the cloud using Docker):
 <iframe 
     src="https://multi-agent-research-workflow-production.up.railway.app/" 
@@ -25,23 +43,6 @@ ORPO (Odds Ratio Preference Optimization) is a single-stage fine-tuning method t
 
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/Transformers-white?logo=huggingface)](#) 
 
----
-
-
-## Neural Network-Based Time-Series Forecasting
-This project implements a multi-step time-series forecasting model using a hybrid CNN-LSTM architecture. The 1D convolutional neural network (CNN) extracts local patterns (e.g., short-term fluctuations, trends) from the input sequence, while the LSTM network captures long-term temporal dependencies. Unlike recursive single-step prediction, the model performs direct multi-step forecasting (Seq2Seq), outputting am entire future sequence of values at once. Trained on historical energy data, the model forecasts weekly energy consumption over a consecutive 10-week horizon, achieving a Mean Absolute Percentage Error (MAPE) of 10% (equivalent to an overall accuracy of 90%). The results demonstrate robust performance for long-range forecasting, highlighting the effectiveness of combining CNNs for feature extraction and LSTMs for sequential modeling in energy demand prediction.
-
-<iframe src="images/forecasting_2.html"
-        width="650"
-        height="350"
-        frameborder="0"
-        scrolling="no">
-</iframe>
-Figure: Actual and predicted energy usage over 10 weeks of time period.
-
-[View example codes on GitHub](https://github.com/muntasirhsn/CNN-LSTM-model-for-energy-usage-forecasting)
-
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/TensorFlow-white?logo=TensorFlow)](#) [![](https://img.shields.io/badge/-Keras-white?logo=Keras&logoColor=black)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#)
 
 ---
 
