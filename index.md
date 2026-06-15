@@ -21,7 +21,8 @@ Figure: Actual and predicted energy usage over 10 weeks of time period.
 ---
 ## Multi-Agent Workflow for Analytical Reporting
 This project demonstrates an automated workflow for analytical report generation. A coordinated set of AI agents decomposes complex topics into structured tasks, retrieves relevant information from multiple sources by using tools (web search, archive, and Wikipedia extractor), and synthesises findings into a coherent report. The system supports efficient information gathering, structured analysis, and clear communication of insights, reflecting a practical approach to scaling analytical reporting.
-Please try the agentic app below (deployed over the cloud using Docker):
+
+**Please try the agentic app below (deployed over the cloud using Docker)**:
 <iframe 
     src="https://multi-agent-research-workflow-production.up.railway.app/" 
     width="650" 
