@@ -9,7 +9,7 @@ This project is a multi-agent healthcare analytics web application that converts
 
 **Please try the agentic app below (deployed over the cloud using Docker)**:
 <iframe 
-    src="https://multi-agent-research-workflow-production.up.railway.app/" 
+    src="https://agentic-data-analyst-production-cb1d.up.railway.app/" 
     width="650" 
     height="900px" 
     frameborder="0"
