@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 # Selected projects in  Agentic AI, Machine Learning, LLMs, MLOps, and AI safety.  
 
 ---
