@@ -5,8 +5,14 @@ layout: default
 # Selected projects in Agentic AI, Machine Learning, LLMs, MLOps, and AI safety.  
 
 ## Multi-Agent Healthcare Data Analyst
-#### A privacy-aware agentic AI web application that generates comprehensive first-pass healthcare data analysis reports from clean clinical datasets.
-This project is a multi-agent healthcare analytics web application that converts clean clinical or healthcare datasets into structured, comprehensive data analysis reports. The system orchestrates specialised agents for analysis planning, code generation, secure code execution, and report writing, enabling it to move from dataset understanding to statistical summaries, visual exploration, and narrative insights in a single workflow. Designed as an assistive tool for healthcare analytics teams, the application helps accelerate the early stages of data investigation by producing a rigorous first-pass report that analysts, data scientists, clinicians, or hospital decision-makers can review, validate, and extend. Its value lies in reducing repetitive analytical groundwork, improving reporting consistency, and allowing expert teams to focus more quickly on interpretation, clinical relevance, advanced modelling, and decision support. The project also explores the practical use of open-weight language models such as GLM 5.2, making it especially relevant for privacy-sensitive healthcare environments where local deployment, data control, and secure handling of patient-related information are critical considerations.
+
+#### A privacy-aware agentic AI web application for first-pass healthcare data analysis and reporting.
+
+This project is a deployed multi-agent healthcare analytics web application that converts clean healthcare or clinical-style datasets into structured first-pass analysis reports. The system orchestrates specialised agents for analysis planning, code generation, controlled code execution and report writing, helping move from dataset understanding to statistical summaries, visual exploration and narrative insights in a single workflow.
+
+Designed as an assistive tool for healthcare analytics teams, the application helps accelerate early-stage data investigation by reducing repetitive analytical groundwork, improving reporting consistency and giving analysts, data scientists, clinicians or decision-makers a structured report to review, validate and extend. The project also explores privacy-aware design considerations and the practical use of open-weight language models, making it relevant to healthcare environments where data control, secure handling and reproducible analysis are important.
+
+**Try the deployed app:** 
 
 **Please try the agentic app below (deployed over the cloud using Docker)**:
 <iframe 
