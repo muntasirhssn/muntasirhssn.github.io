@@ -16,7 +16,7 @@ This project is a multi-agent healthcare analytics web application that converts
 <iframe 
     src="https://agentic-data-analyst-production-cb1d.up.railway.app/" 
     width="650" 
-    height="900px" 
+    height="1200px" 
     frameborder="0"
     style="border: 1px solid #ddd; border-radius: 8px;"
 ></iframe>
