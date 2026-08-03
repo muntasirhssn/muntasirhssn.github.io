@@ -2,12 +2,8 @@
 layout: default
 ---
 
-
-# Selected projects in  Agentic AI, Machine Learning, LLMs, MLOps, and AI safety.  
-
+# Selected projects in Agentic AI, Machine Learning, LLMs, MLOps, and AI safety.  
 ---
-
-
 ## Multi-Agent Healthcare Data Analyst
 #### A privacy-aware agentic AI web application that generates comprehensive first-pass healthcare data analysis reports from clean clinical datasets.
 This project is a multi-agent healthcare analytics web application that converts clean clinical or healthcare datasets into structured, comprehensive data analysis reports. The system orchestrates specialised agents for analysis planning, code generation, secure code execution, and report writing, enabling it to move from dataset understanding to statistical summaries, visual exploration, and narrative insights in a single workflow. Designed as an assistive tool for healthcare analytics teams, the application helps accelerate the early stages of data investigation by producing a rigorous first-pass report that analysts, data scientists, clinicians, or hospital decision-makers can review, validate, and extend. Its value lies in reducing repetitive analytical groundwork, improving reporting consistency, and allowing expert teams to focus more quickly on interpretation, clinical relevance, advanced modelling, and decision support. The project also explores the practical use of open-weight language models such as GLM 5.2, making it especially relevant for privacy-sensitive healthcare environments where local deployment, data control, and secure handling of patient-related information are critical considerations.
@@ -28,12 +24,14 @@ This project is a multi-agent healthcare analytics web application that converts
 
 
 ## End-to-End ML Pipelines and Deployment at Scale
-Develop an end-to-end machine learning (ML) workflow with automation for all the steps including data preprocessing, training models at scale with distributed computing (GPUs/CPUs), model evaluation, deploying in production, model monitoring and drift detection with Amazon SageMaker Pipeline - a purpose-built CI/CD service.
+Develop an end-to-end machine learning (ML) workflow with automation for all the steps including data ingestion, data preprocessing, training models at scale with distributed computing (GPUs/CPUs), model evaluation, deploying in production, model monitoring and drift detection with Amazon SageMaker Pipeline - a purpose-built CI/CD service.
 
 
-<img src="images/MLOps6_Muntasir Hossain.jpg?raw=true"/> Figure: ML orchestration reference architecture with AWS
+<img src="images/MLOps6_Muntasir Hossain.jpg?raw=true"/> 
+Figure: ML orchestration reference architecture with AWS
 
-<img src="images/Sageaker Pipeline5.png?raw=true"/> Figure: CI/CD pipeline with Amazon Sagemaker 
+<img src="images/Sageaker Pipeline5.png?raw=true"/> 
+Figure: CI/CD pipeline with Amazon Sagemaker 
 
 [View codes on GitHub](https://github.com/muntasirhsn/MLOps-with-AWS)
 
