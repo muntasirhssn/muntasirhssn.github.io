@@ -14,7 +14,6 @@ Designed as an assistive tool for healthcare analytics teams, the application he
 
 **Try the deployed app:** 
 
-**Please try the agentic app below (deployed over the cloud using Docker)**:
 <iframe 
     src="https://agentic-data-analyst-production-cb1d.up.railway.app/" 
     width="650" 
