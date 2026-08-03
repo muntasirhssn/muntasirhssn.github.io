@@ -6,11 +6,17 @@ layout: default
 
 ## Multi-Agent Healthcare Data Analyst
 
-#### A privacy-aware agentic AI web application for first-pass healthcare data analysis and reporting.
+#### A deployed, privacy-aware agentic AI web application for first-pass healthcare data analysis and reporting.
 
-This project is a deployed multi-agent healthcare analytics web application that converts clean healthcare or clinical-style datasets into structured first-pass analysis reports. The system orchestrates specialised agents for analysis planning, code generation, controlled code execution and report writing, helping move from dataset understanding to statistical summaries, visual exploration and narrative insights in a single workflow.
+This project is a multi-agent healthcare analytics web application designed to help healthcare teams convert their healthcare datasets into structured first-pass analysis reports. The system orchestrates specialised agents for analysis planning, code generation, controlled code execution and report writing, enabling automated data profiling, statistical summaries, visual exploration and narrative insight generation in a single workflow.
 
-Designed as an assistive tool for healthcare analytics teams, the application helps accelerate early-stage data investigation by reducing repetitive analytical groundwork, improving reporting consistency and giving analysts, data scientists, clinicians or decision-makers a structured report to review, validate and extend. The project also explores privacy-aware design considerations and the practical use of open-weight language models, making it relevant to healthcare environments where data control, secure handling and reproducible analysis are important.
+Designed as an assistive tool for healthcare analytics teams, the application helps accelerate early-stage data investigation by reducing repetitive analytical groundwork, improving reporting consistency and giving analysts, data scientists, clinicians or decision-makers a structured report to review, validate and extend. The project demonstrates practical experience in deployed agentic AI, multi-agent workflow design, Docker-based deployment and healthcare-oriented analytical decision support.
+
+The project also explores privacy-aware design considerations and the practical use of open-weight language models such as GLM 5.2. This creates a pathway for organisations to adapt the solution for controlled infrastructure, where data control, secure deployment, reproducible analysis and reduced reliance on external closed-model APIs are important.
+
+The application was tested using public healthcare datasets to validate the workflow and reporting capability.
+
+Try the deployed app: [Launch Multi-Agent Healthcare Data Analyst](https://agentic-data-analyst-production-cb1d.up.railway.app)
 
 **Try the deployed app:** 
 
