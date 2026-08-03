@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Selected projects in Agentic AI, Machine Learning, LLMs, MLOps, and AI safety.  
+# AI and Machine Learning Portfolio
+
+A selection of applied AI, machine learning and MLOps projects demonstrating practical experience in agentic AI applications, cloud-based ML workflows, model deployment, automated reporting and predictive analytics. 
 
 ## Multi-Agent Healthcare Data Analyst
 
