@@ -35,7 +35,10 @@ The application was tested using public healthcare datasets to validate the work
 
 
 ## End-to-End ML Pipelines and Deployment at Scale
-Develop an end-to-end machine learning (ML) workflow with automation for all the steps including data ingestion, data preprocessing, training models at scale with distributed computing (GPUs/CPUs), model evaluation, deploying in production, model monitoring and drift detection with Amazon SageMaker Pipeline - a purpose-built CI/CD service.
+
+This project demonstrates an end-to-end machine learning workflow on AWS, covering data ingestion, preprocessing, model training, evaluation, deployment and monitoring concepts. The workflow uses Amazon SageMaker Pipelines for ML orchestration and integrates CI/CD practices to support repeatable, production-oriented model delivery.
+
+The project highlights practical MLOps concepts including automated pipeline stages, scalable training, model evaluation, deployment readiness, monitoring and drift detection. It is designed to show how machine learning workflows can be structured for reproducibility, reliability and operational scalability in cloud environments.
 
 
 <img src="images/MLOps6_Muntasir Hossain.jpg?raw=true"/> 
@@ -54,7 +57,12 @@ Figure: CI/CD pipeline with Amazon Sagemaker
 
 
 ## Neural Network-Based Time-Series Forecasting
-This project implements a multi-step time-series forecasting model using a hybrid CNN-LSTM architecture. The 1D convolutional neural network (CNN) extracts local patterns (e.g., short-term fluctuations, trends) from the input sequence, while the LSTM network captures long-term temporal dependencies. Unlike recursive single-step prediction, the model performs direct multi-step forecasting (Seq2Seq), outputting am entire future sequence of values at once. Trained on historical energy data, the model forecasts weekly energy consumption over a consecutive 10-week horizon, achieving a Mean Absolute Percentage Error (MAPE) of 10% (equivalent to an overall accuracy of 90%). The results demonstrate robust performance for long-range forecasting, highlighting the effectiveness of combining CNNs for feature extraction and LSTMs for sequential modeling in energy demand prediction.
+
+This project implements a multi-step time-series forecasting model using a hybrid CNN-LSTM architecture. The 1D convolutional neural network extracts local temporal patterns such as short-term fluctuations and trends, while the LSTM network captures longer-term sequence dependencies.
+
+Unlike recursive single-step forecasting, the model performs direct multi-step prediction using a sequence-to-sequence approach, outputting an entire future sequence at once. Trained on historical energy consumption data, the model forecasts weekly energy demand over a consecutive 10-week horizon and achieved a Mean Absolute Percentage Error of 10%, equivalent to approximately 90% forecast accuracy.
+
+The project demonstrates practical experience in neural-network-based forecasting, sequence modelling, model evaluation and applied decision-support analytics for demand planning.
 
 <iframe src="images/forecasting_2.html"
         width="850"
