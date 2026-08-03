@@ -31,6 +31,7 @@ Develop an end-to-end machine learning (ML) workflow with automation for all the
 Figure: ML orchestration reference architecture with AWS
 
 <img src="images/Sageaker Pipeline5.png?raw=true"/> 
+
 Figure: CI/CD pipeline with Amazon Sagemaker 
 
 [View codes on GitHub](https://github.com/muntasirhsn/MLOps-with-AWS)
