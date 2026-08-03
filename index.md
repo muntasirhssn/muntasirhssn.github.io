@@ -16,8 +16,6 @@ The project also explores privacy-aware design considerations and the practical 
 
 The application was tested using public healthcare datasets to validate the workflow and reporting capability.
 
-Try the deployed app: [Launch Multi-Agent Healthcare Data Analyst](https://agentic-data-analyst-production-cb1d.up.railway.app)
-
 **Try the deployed app:** 
 
 <iframe 
