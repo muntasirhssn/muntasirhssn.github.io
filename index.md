@@ -21,7 +21,7 @@ The application was tested using public healthcare datasets to validate the work
 **Try the deployed app:** 
 
 <iframe 
-    src="https://agentic-data-analyst-production-cb1d.up.railway.app/" 
+    src="https://multi-agent-data-analyst-production.up.railway.app/" 
     width="650" 
     height="1200px" 
     frameborder="0"
